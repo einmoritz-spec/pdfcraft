@@ -1,34 +1,31 @@
 # PdfCraft app icon
 
-<img src="pdfcraft-small.svg" alt="PdfCraft app icon: an engraved lion's head on red" width="128">
+<img src="pdfcraft.svg" alt="PdfCraft app icon: the letters PDF in white on a red tile" width="128">
 
-**Creature:** a lion, in a frontal head-and-shoulders portrait, mane running off the bottom of the tile.
+**Motif:** the letters "PDF", centred, and nothing else.
 
-**Style:** an engraving (woodcut-weight line work) portrait in the Crafting Apps "owl template" framing:
-a full-bleed colour field, no frame or roundel, the animal looking at the viewer and filling the tile.
+**Style:** flat and geometric. The letters are built from thick strokes and drawn as plain vector paths, so
+the icon needs no font and stays legible down to 16 px.
 
-**Palette:** exactly three colours.
+**Palette:** exactly two colours.
 
 | Colour | Hex | Used for |
 |---|---|---|
-| Ink | `#0b0b0c` | line work and the figure's contour |
-| Paper | `#efe9dc` | the figure (the lion's silhouette) |
-| PdfCraft red (app colour) | `#b70228` | the full-bleed field |
+| PdfCraft red (app colour) | `#b70228` | the tile |
+| White | `#ffffff` | the lettering |
 
-**Tile:** `viewBox="0 0 512 512"`, a rounded square with `rx=112` that clips everything. Windows and Linux
-icons use the full-bleed tile. macOS icons put it on Apple's grid (an 824 px body centred on a transparent
-1024 px canvas).
+**Tile:** `viewBox="0 0 512 512"`, a rounded square with `rx=112`. Windows and Linux icons use the full-bleed
+tile. macOS icons put it on Apple's grid (an 824 px body centred on a transparent 1024 px canvas).
 
-**Provenance:** the project owner's original drawing, made in ArtCraft (2880 px, keyed to the palette), then
-vectorised (potrace; no filtering or warping).
+**Provenance:** original vector artwork made for this project (the letterforms are drawn from rectangles,
+lines and arcs; no font and no third-party material).
 Licence: [LICENSE.txt](LICENSE.txt) (`MIT OR Apache-2.0`, like the repo).
 
 ## Files
 
 | File | What it is |
 |---|---|
-| `pdfcraft.svg` | the master vector (traced at 2048 px); every PNG, `.ico` and `.icns` is rendered from it |
-| `pdfcraft-small.svg` | a lighter vector (traced at 1024 px) for places where size matters, such as this README |
+| `pdfcraft.svg` | the master vector; every PNG, `.ico` and `.icns` is rendered from it |
 | `pdfcraft-1024.png` | 1024 px on Apple's grid; also the runtime Dock icon on macOS |
 | `pdfcraft.icns` | macOS icon (16–1024 px) |
 | `pdfcraft.ico` | Windows icon (16–256 px), embedded in `pdfcraft.exe` by `apps/pdfcraft/build.rs` |
